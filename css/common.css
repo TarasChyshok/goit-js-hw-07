@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  list-style-type: none;
+  padding:0;
 }
 
 body {
@@ -11,4 +13,131 @@ body {
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
+}
+
+ul#categories{
+  font-family: "Montserrat", sans-serif;
+  display:flex;
+  flex-wrap: wrap;
+  gap:24px;
+}
+
+ul#categories>li{
+  background-color: #F6F6FE;
+  border-radius:8px;
+}
+
+ul>li>h2{
+  margin:16px;
+}
+
+ul>li>ul>li{
+  width:360px;
+  height:40px;
+  padding:8px 16px;
+  border: 1px solid #808080;
+  border-radius: 4px; 
+}
+
+ul>li>ul{
+  display: flex;
+  flex-direction: column;
+  margin:16px;
+  gap:8px;
+}
+
+
+
+
+
+input#name-input{
+  border: 1px solid #000;
+  width: 360px;
+  height: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  padding:16px;
+
+  /* line-height: 24px; */ 
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  font-family: "Montserrat", sans-serif;
+}
+
+
+
+
+form.login-form{
+  display:flex;
+  flex-direction: column;
+  gap:8px;
+  font-family: "Montserrat", sans-serif;
+}
+
+
+form.login-form>label input{
+  display:block;
+  width:360px;
+  height:40px;
+  border-radius: 8px;
+  box-shadow:none;
+  border-color: #808080;
+  margin-top:8px;
+  color:#2E2F42;
+}
+
+form.login-form button{
+  margin-top:16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  border:0px;
+  background-color: #4E75FF;
+
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 86px;
+  height: 40px;
+  color:white;
+}
+
+
+
+
+div.widget{
+  justify-self: center;
+  margin: 100px auto;
+  justify-content: center;
+}
+
+div.widget>p{
+  margin:0;
+  padding: 0;
+  margin-bottom:16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+
+  /* line-height: 24px; */ 
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+button.change-color{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 148px;
+  background: #4e75ff;
+  border: 0px;
+  color:white;
+  margin:auto;
 }

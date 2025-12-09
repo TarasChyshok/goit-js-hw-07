@@ -1,12 +1,10 @@
 const arrayOfCategories = document.querySelectorAll("li.item");
-console.log(arrayOfCategories.length);
+console.log(`Number of categories: ${arrayOfCategories.length}`);
 
 const action = () => {
-    let i = 0;
     for(const elem of arrayOfCategories){
-        console.log(elem.firstElementChild.textContent);
-        console.log(`Number of elements: ${elem.children[1].querySelectorAll("li").length}`);
-
+        console.log(`Category: ${elem.firstElementChild.textContent}`);
+        console.log(`Elements: ${elem.children[1].querySelectorAll("li").length}`);
     }
 
 }

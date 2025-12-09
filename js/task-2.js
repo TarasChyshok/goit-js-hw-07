@@ -26,17 +26,11 @@ const images = [
 ];
 
 const ul = document.querySelector("ul.gallery");
-ul.style.display = "flex";
-ul.style.flexWrap = "wrap";
-ul.style.justifyContent = "space-evenly";
-ul.style.textDecoration = "none";
-const array = [];
-for(const img of images){
-  const elem = document.createElement("li");
-  elem.innerHTML = `<img src='${img.url}' width="100" height="100" alt="${img.alt}">`;
-  array.push(elem);
-}
-ul.append(...array);
+ul.setAttribute("style", "display:flex; flex-wrap: wrap; justify-content:center; list-style-type:none; column-gap:24px; row-gap:48px; margin:0 auto; margin-top:100px;");
 
-// ${};
-// insertAdjacentHTML(postMessage, str);
+let markup = "";
+for(const img of images){
+  const markupElement = `<li style="width:360px; height:300px"> <img src='${img.url}' style="width:100%; height:100%; object-fit:cover" alt="${img.alt}"> </li>`;
+  markup += markupElement;
+}
+ul.insertAdjacentHTML("beforeEnd", markup);
