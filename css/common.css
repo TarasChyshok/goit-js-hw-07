@@ -51,6 +51,7 @@ ul>li>ul{
 
 
 input#name-input{
+  border: 1px solid #808080;
   border: 1px solid #000;
   width: 360px;
   height: 40px;
@@ -77,6 +78,7 @@ form.login-form{
 
 
 form.login-form>label input{
+  outline:none;
   display:block;
   width:360px;
   height:40px;
@@ -85,6 +87,25 @@ form.login-form>label input{
   border-color: #808080;
   margin-top:8px;
   color:#2E2F42;
+}
+
+form.login-form>label input:hover{
+  border-color: #6C8CFF;
+}
+
+form.login-form>label input:active{
+border-color:#2E2F42;
+}
+
+form.login-form>label input:active::placeholder{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+
+  /* line-height: 24px; */ 
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
 }
 
 form.login-form button{
